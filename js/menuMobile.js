@@ -3,16 +3,18 @@ let menu = document.getElementById('menu-mobile')
 let overlay = document.getElementById('overlay-menu')
 let fechar = document.getElementById('btn-fechar')
 
+btn.addEventListener('click', abrirMenu)
 
-btn.addEventListener('click', ()=>{
+menu.addEventListener('click', fecharMenu)
+
+overlay.addEventListener('click', fecharMenu)
+
+fechar.addEventListener('click', fecharMenu)
+
+function abrirMenu(){
     menu.classList.add('abrie-menu')
-})
-menu.addEventListener('click', ()=>{
+}
+
+function fecharMenu(){
     menu.classList.remove('abrie-menu')
-})
-overlay.addEventListener('click', ()=>{
-    menu.classList.remove('abrie-menu')
-})
-fechar.addEventListener('click', ()=>{
-    menu.classList.remove('abrie-menu')
-})
+}

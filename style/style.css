@@ -60,7 +60,7 @@ header{
     padding: 40px 4%
 }
 
-header > .interface{
+header>.interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,6 +90,10 @@ header nav.menu-desktop ul li{
 }
 
  /* Menu mobile */
+
+ .btn-abrir-menu{
+    display: none;
+ }
 
  .btn-abrir-menu i{
     color: var(--cor05);
@@ -387,6 +391,18 @@ form .btn-enviar input{
 
 /* } */
 
+/* Mensagem de confirmação de sucesso ou falha ao enviar o formulario para o e-mail */
+
+#mensagemSucesso{
+    display: none; 
+    justify-self: center; 
+    color: #000000; 
+    margin-top: 40px; 
+    text-align: center; 
+}
+
+
+
 /* Estilo rodapé */
 
 footer{
@@ -425,6 +441,11 @@ footer .line-footer p a{
     .menu-desktop, .btn-contrato {
         display: none;
     }
+
+    .btn-abrir-menu{
+        display: block;
+     }
+
     /* Ajustar a interface principal para telas menores */
     .interface {
         width: 100%;
