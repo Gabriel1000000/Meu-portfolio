@@ -462,8 +462,13 @@ footer .line-footer p a{
     .topo-site .txt-topo-site h1 {
         font-size: 32px;
         line-height: 1.5;
+        
     }
 
+    h1{
+        
+        height: 200px;
+    }
     .topo-site .txt-topo-site p {
         font-size: 16px;
     }
@@ -531,7 +536,22 @@ footer .line-footer p a{
 }
 
 
-
+/* efeito de escrita */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: var(--cor05);
+    margin-left: 5px;
+    animation: curso 0.7s step-end infinite;
+}
+  
+@keyframes curso {
+    50% {
+      opacity: 0;
+    }
+  }
+  
 
 
 
