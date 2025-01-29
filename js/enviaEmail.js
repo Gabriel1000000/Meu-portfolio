@@ -12,7 +12,7 @@ async function enviaGmail(e){
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://formsubmit.co/ajax/604f6157f50dda459c4ba18f94ebd926 ', {
+        const response = await fetch('https://formsubmit.co/ajax/gabriel.alves.varella@gmail.com ', {
             method: 'POST',
             body: formData,
         });
