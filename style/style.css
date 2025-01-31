@@ -17,7 +17,7 @@ button{
     transition:  .2s;
 }
 
-button:hover, form .btn-enviar input:hover{
+.btn-contrato button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px var(--cor05);
     transform: scale(1.05);
 }
@@ -45,11 +45,13 @@ h2.titulo span{
     --cor05: #00ff08;
     --cor06: #ffffff78;
 }
+
 /* corpo*/
 body{
     background-color: var(--cor01);
     height: 100vh;
 }
+
 /* menu*/
 .interface{
     width: 1200px;
@@ -159,7 +161,6 @@ header nav.menu-desktop ul li{
     color: var(--cor02);
     text-decoration: none;
 }
-
 
 /* Inicio-site*/
 section.topo-site{
@@ -278,7 +279,9 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: var(--cor05);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--cor05);
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -287,6 +290,10 @@ section.sobre .flex {
     justify-content: center;
     align-items: center;
 }
+
+/* .btn-social button:hover{
+    color: var(--cor02);
+} */
 
 /* ESTILO DO PORTIFÓLIO */
 
@@ -433,7 +440,37 @@ footer .line-footer p a{
     
 }
 
-/* responsividade */
+/* Botão de voltar para o topo */
+
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #1f1f1f00;
+    color: var(--cor05);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-topo.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-topo:hover{
+    background-color: #1f1f1f71;
+}
+
 
 /* Responsividade */
 @media (max-width: 1276px) {
