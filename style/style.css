@@ -467,11 +467,6 @@ footer .line-footer p a{
     visibility: visible;
 }
 
-.btn-topo:hover{
-    background-color: #1f1f1f71;
-}
-
-
 /* Responsividade */
 @media (max-width: 1276px) {
     /* Ocultar o menu-desktop */
